@@ -28,9 +28,9 @@ class DatasetCollector:
             # We store the preprocessed data set for easy retrieval
             print("We are saving the data set...", len(dataset), dataset.info())
             dataset.to_csv("dataset.csv", index=False)
-        else:
-            # We read in an already stored dataset...
-            dataset = pd.read_csv("dataset.csv")
+
+        # We read in an already stored dataset...
+        dataset = pd.read_csv("dataset.csv")
 
         return dataset
 
